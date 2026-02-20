@@ -3,5 +3,15 @@ $font-family-sans-serif: "Instrument Sans";
 $primary: #2c73d2;
 $light-blue: #c4dcff;
 $font-family-base: $font-family-sans-serif;
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-light-color: $primary;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+ul {
+  list-style: none;
+}
+
+.nav-link:hover {
+  color: $primary !important;
+}
