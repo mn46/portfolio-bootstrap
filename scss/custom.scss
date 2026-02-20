@@ -1,6 +1,7 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 $font-family-serif: "Gloock";
-$font-sans-serif: "Instrument Sans";
+$font-family-sans-serif: "Instrument Sans";
 $primary: #2c73d2;
 $light-blue: #c4dcff;
+$font-family-base: $font-family-sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
