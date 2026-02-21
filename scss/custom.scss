@@ -56,6 +56,10 @@ button {
   pointer-events: none;
 }
 
+#modal_top_wrapper {
+  background-image: linear-gradient($primary, $light-blue);
+}
+
 // animation
 
 @keyframes move-down {

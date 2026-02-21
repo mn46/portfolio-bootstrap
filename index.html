@@ -59,6 +59,8 @@
           <template id="project_card">
             <button
               class="project-button overflow-hidden mt-3 p-0 position-relative"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
             >
               <div class="button-overlay w-100 h-100 position-absolute"></div>
               <img src="" class="project-image w-100" />
@@ -105,23 +107,53 @@
       </section>
 
       <!-- modal -->
-      <section id="modal" role="modal">
-        <div id="modal_top_wrapper">
-          <button id="close_button">X</button>
-          <h2 id="modal_title"></h2>
-          <img id="modal_image" src="" />
-          <div id="modal_technologies_container">
-            <h3>Technologies used:</h3>
-            <p id="modal_technologies"></p>
+      <section
+        id="modal"
+        role="dialog"
+        class="modal fade"
+        tabindex="-1"
+        aria-hidden="true"
+        aria-labelled-by="modal-title"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div id="modal_top_wrapper">
+              <button
+                id="close_button"
+                class="text-white fw-semibold"
+                data-bs-dismiss="modal"
+              >
+                X
+              </button>
+              <h3
+                id="modal_title"
+                class="display-6 text-white my-4 text-center"
+              ></h3>
+              <img id="modal_image" src="" class="w-100" />
+              <div
+                id="modal_technologies_container"
+                class="text-primary fw-semibold mx-3 mx-md-5 my-2"
+              >
+                <h4>Technologies used:</h4>
+                <p id="modal_technologies"></p>
+              </div>
+            </div>
+            <p
+              id="modal_description"
+              class="mx-3 mx-md-5 my-2 text-primary fw-semibold"
+            ></p>
+            <p
+              id="see_project"
+              class="mx-3 mx-md-5 my-2 text-primary fw-semibold"
+            >
+              See the full project:
+              <span><a id="project_link" href="" target="_blank"></a></span>
+            </p>
           </div>
         </div>
-        <p id="modal_description"></p>
-        <p id="see_project">
-          See the full project:
-          <span><a id="project_link" href="" target="_blank"></a></span>
-        </p>
       </section>
     </main>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

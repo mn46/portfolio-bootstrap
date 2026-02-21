@@ -40,9 +40,7 @@ const scrollToMyWorks = () => {
 
 arrowBtn.addEventListener("click", scrollToMyWorks);
 
-const showAndPopulateModal = (e) => {
-  document.querySelector("#modal").style.display = "block";
-
+const populateModal = (e) => {
   const projectId = Number(e.target.id);
 
   const project = projects.find((item) => item.id === projectId);
@@ -59,12 +57,6 @@ const showAndPopulateModal = (e) => {
   description.textContent = project.description;
   link.href = project.link;
   link.textContent = project.link;
-
-  document.querySelector("#close_button").addEventListener("click", closeModal);
-};
-
-const closeModal = () => {
-  document.querySelector("#modal").style.display = "none";
 };
 
 const createProjectCards = () => {
@@ -76,9 +68,7 @@ const createProjectCards = () => {
 
     clone.querySelector("button").id = project.id;
     clone.querySelector(".project-image").src = project.image;
-    clone
-      .querySelector("button")
-      .addEventListener("click", showAndPopulateModal);
+    clone.querySelector("button").addEventListener("click", populateModal);
 
     parentForProjects.appendChild(clone);
   });
