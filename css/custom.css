@@ -11915,6 +11915,10 @@ button {
   background-image: linear-gradient(#2c73d2, #c4dcff);
 }
 
+#about_me_headline {
+  background-image: linear-gradient(#2c73d2, #c4dcff);
+}
+
 @keyframes move-down {
   0% {
     transform: translateY(0%);
@@ -11925,6 +11929,9 @@ button {
 }
 @media (min-width: 768px) {
   .project-button {
+    width: 50vw;
+  }
+  #about_me_text {
     width: 50vw;
   }
 }

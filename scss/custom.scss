@@ -60,6 +60,10 @@ button {
   background-image: linear-gradient($primary, $light-blue);
 }
 
+#about_me_headline {
+  background-image: linear-gradient($primary, $light-blue);
+}
+
 // animation
 
 @keyframes move-down {
@@ -75,6 +79,10 @@ button {
 
 @include media-breakpoint-up(md) {
   .project-button {
+    width: 50vw;
+  }
+
+  #about_me_text {
     width: 50vw;
   }
 }
