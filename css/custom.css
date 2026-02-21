@@ -11897,12 +11897,31 @@ button {
   animation: move-down 300ms ease-out forwards;
 }
 
+.project-button {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.button-overlay {
+  background-image: linear-gradient(transparent, #2c73d2);
+  pointer-events: none;
+}
+
+.project-image {
+  pointer-events: none;
+}
+
 @keyframes move-down {
   0% {
     transform: translateY(0%);
   }
   100% {
     transform: translateY(50%);
+  }
+}
+@media (min-width: 768px) {
+  .project-button {
+    width: 50vw;
   }
 }
 

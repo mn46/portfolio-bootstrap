@@ -42,6 +42,20 @@ button {
   animation: move-down 300ms ease-out forwards;
 }
 
+.project-button {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.button-overlay {
+  background-image: linear-gradient(transparent, $primary);
+  pointer-events: none;
+}
+
+.project-image {
+  pointer-events: none;
+}
+
 // animation
 
 @keyframes move-down {
@@ -50,5 +64,13 @@ button {
   }
   100% {
     transform: translateY(50%);
+  }
+}
+
+// breakpoints
+
+@include media-breakpoint-up(md) {
+  .project-button {
+    width: 50vw;
   }
 }

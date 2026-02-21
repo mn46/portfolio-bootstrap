@@ -52,11 +52,16 @@
       </section>
       <section id="my_works">
         <h2 class="display-6 text-center my-5 text-primary">My works</h2>
-        <div id="projects_list">
+        <div
+          id="projects_list"
+          class="d-flex flex-column align-items-center mx-3"
+        >
           <template id="project_card">
-            <button class="project-button">
-              <div class="button-overlay"></div>
-              <img src="" class="project-image" />
+            <button
+              class="project-button overflow-hidden mt-3 p-0 position-relative"
+            >
+              <div class="button-overlay w-100 h-100 position-absolute"></div>
+              <img src="" class="project-image w-100" />
             </button>
           </template>
         </div>
