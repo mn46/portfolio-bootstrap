@@ -11911,10 +11911,7 @@ button {
   pointer-events: none;
 }
 
-#modal_top_wrapper {
-  background-image: linear-gradient(#2c73d2, #c4dcff);
-}
-
+#modal_top_wrapper,
 #about_me_headline {
   background-image: linear-gradient(#2c73d2, #c4dcff);
 }
